@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>walaa</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!-- Background Video -->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="https://cdn.pixabay.com/video/2022/02/11/107425-678258632_tiny.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video Text -->
+    <div class="Video_Text">
+        <h1 class="white-text">walaa Portfolio</h1>
+        <strong>
+            <p class="center quote">
+                <q>Programming is the closest thing we have to magic—lines of logic that create living systems.</q>
+                <br>– samer<br><br>
+                Hello! I'm walaa, a curious and motivated software development student.
+                <br>This portfolio is a window into the skills I've learned and the projects I've explored.
+                <br><br>
+                Thanks for stopping by—enjoy your visit!
+            </p>
+        </strong>
+    </div>
+
+    <!-- Slideshow -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://media.istockphoto.com/id/858530830/photo/amazing-view-with-colorful-autumn-forest-with-asphalt-mountain-road-at-sunset-beautiful.jpg?s=1024x1024&w=is&k=20&c=XwdySPSRKGOpEqrVWdOz50LnGh5ImPYd9DgQ55iPp8A=">
+                    <div class="text">Building ideas into reality, one line at a time.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png">
+                    <div class="text">I learning  in HTML, CSS & JavaScript with confidence.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://media.istockphoto.com/id/1068618692/photo/business-network-concept.jpg?s=1024x1024&w=is&k=20&c=ka7gO1CnBXDS5GusltwejgJQ6lm0QZzAfcMPtoQiZnQ=">
+                    <div class="text">Love working with Python for data and logic tasks.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_1280.jpg">
+                    <div class="text">Exploring C#, .NET, and building scalable solutions.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg">
+                    <div class="text">Database integration using SQL and server-side logic.</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Let's build something together!</a></div>
+                </div>
+
+                <!-- Slideshow navigation -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/06/17/computer-1867758_1280.jpg" alt="Laptop">
+        </div>
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                My name is walaa and I’m a passionate learner and aspiring full-stack developer.
+                <br><br>
+                I’m currently expanding my knowledge in web technologies, cloud systems, and software architecture. I’m a proud graduate of
+                <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp.
+                <br><br>
+                My training includes HTML, CSS, JavaScript, Python, SQL, and C#. I enjoy tackling technical challenges and working in collaborative environments.
+                <br><br>
+                <a onclick="openForm()" class="contact">Let’s connect and collaborate!</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>Explore my personal and academic coding projects:</p>
+            <p class="center"><a href="https://github.com/samer55" target="_blank">My GitHub</a></p>
+        </div>
+        <div class="Column_2">
+            <a href="https://github.com/DjenanAlkarnavi" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2021/09/23/06/59/github-6648895_1280.jpg" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()">
+            <form action="" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">&copy; samer, <a href="https://github.com/DjenanAlkarnavi" target="_blank">My GitHub</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
